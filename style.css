@@ -1,0 +1,495 @@
+
+h1,h2,h3,h4,h5,h6,a,p,span {
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+/* =================
+Heder CSS
+==================== */
+.main-heder {
+    padding: 10px 0px;
+}
+
+.logo {
+    line-height: 40px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #00284E;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.hedermanu ul {
+    list-style: none;
+    margin-bottom: 0px;
+    padding-left: 0px;
+}
+
+.hedermanu ul li {
+    display: inline-block;
+
+}
+
+.hedermanu ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #010d4c;
+    padding: 5px 10px;
+    font-weight: 400;
+    transition: .3s;
+    display: block;
+    position: relative;
+}
+
+.hedermanu ul li a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    text-align: center;
+    background-color: #913bff;
+    display: block;
+    transition: .3s;
+}
+
+.hedermanu ul li:hover a::after {
+    width: 100%;
+}
+
+.hedermanu ul li a:hover {
+    color: #913bff;
+}
+
+.hedercontact a {
+    margin-left: 5px;
+    font-size: 13px;
+    line-height: 1px;
+    text-decoration: underline;
+}
+
+.hederbutton a {
+    font-weight: 600;
+}
+
+/* =================
+Banner CSS
+==================== */
+.banner-section {
+    background: url("img/pexels-hasan-albari-1229861.jpg") no-repeat center center fixed;
+    background-size: cover;
+    padding: 220px 0px;
+}
+
+.bannerdiv h1 {
+    color: #fff;
+    font-size: 65px;
+}
+
+.bannerdiv h5 {
+    color: #fff;
+    margin: 20px 0px;
+}
+
+/* =================
+Count CSS
+==================== */
+.count-items h1 {
+    font-weight: 800;
+}
+
+/* =================
+PRODUCTS CSS
+==================== */
+.products-div {
+    background-color: #c9c9c9;
+}
+
+.product-heder h5 {
+    color: #9b9b9b;
+}
+
+.product-heder h2 {
+    font-size: 50px;
+}
+
+.product-item {
+    background-color: #fff;
+    border-radius: 5px;
+    transition: .3s;
+    overflow: hidden;
+
+}
+
+.product-item:hover {
+    transform: translateY(-3px);
+}
+
+.product-item:hover .product-img::after {
+    visibility: visible;
+    opacity: 1;
+    bottom: -31px;
+    right: -35px;
+}
+
+.product-img {
+    margin-bottom: 20px;
+    overflow: hidden;
+    position: relative;
+    height: 200px;
+    object-fit: cover;
+}
+
+.product-img::after {
+    content: "";
+    width: 100px;
+    height: 100px;
+    background-color: #913bff;
+    position: absolute;
+    bottom: -100px;
+    right: -100px;
+    border-radius: 50%;
+    visibility: hidden;
+    opacity: 0;
+    transition: .4s;
+}
+
+.product-icon {
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+    color: #fff;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0);
+}
+
+.product-icon i {
+    font-size: 20px;
+}
+
+.product-item:hover .product-icon {
+    opacity: 1;
+    visibility: visible;
+    transition: .4s;
+    transform: scale(1);
+}
+
+.product-footer {
+    padding: 20px;
+    height: 100px;
+}
+
+.product-footer h4 {
+    color: #913bff;
+    font-weight: 900;
+}
+
+.product-footer p {
+    color: #00284E;
+    font-weight: 700;
+    transition: .4s;
+}
+
+.product-footer p:hover {
+    color: #913bff;
+
+}
+
+/* =================
+Feature Section CSS
+==================== */
+
+.feature-itms {
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px 0px rgba(12, 12, 12, .2);
+    padding: 20px;
+    transition: .3s;
+}
+
+.feature-itms:hover {
+    transform: translatey(-4px);
+}
+
+.feature-itms .feature-icon {
+    margin-bottom: 20px;
+}
+
+.feature-itms .feature-icon i {
+    color: #913bff;
+    font-size: 30px;
+}
+
+.feature-itms h6 {
+    font-weight: 900;
+    margin-bottom: 20px;
+    color: #010d4c;
+}
+
+.feature-itms p {
+    font-size: 15px;
+}
+
+.feature-itmssp {
+    margin-bottom: -4px;
+}
+
+.portfilo-div {
+    padding: 100px 0px;
+}
+
+.portfilo-title {
+    margin-top: 100px;
+}
+
+.portfilo-title h5 {
+    font-weight: 600;
+}
+
+.portfilo-title h1 {
+    font-weight: 900;
+    font-size: 53px;
+}
+
+.portfilo-title p {
+    margin-top: 20px;
+}
+
+/* =================
+Recent Itmes CSS
+==================== */
+.recent-itmes {
+    background-color: #9b9b9b;
+    padding: 50px;
+}
+
+/* =================
+ Buy now CSS
+==================== */
+.buy-now {
+    background: url("img/background6.jpg") no-repeat center center;
+    background-size: cover;
+    padding: 50px 0px;
+
+}
+
+.bay-now-title {
+    padding: 50px 0px;
+
+}
+
+.buy-now-card {
+    box-shadow: 1px 1px 4px 0px rgba(12, 12, 12, .2);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.price-div span {
+    font-size: 36px;
+    font-weight: 600;
+    position: relative;
+}
+
+.price-div span::after {
+    content: "$";
+    font-size: 20px;
+    position: absolute;
+    top: -4px;
+    left: -15px;
+}
+
+.buy-now-card h5 {
+    margin: 25px 0px;
+}
+
+.buy-batton {
+    padding: 30px 0px;
+}
+
+.buy-batton a {
+    font-weight: 700;
+}
+
+.buy-now-foter {
+    margin-top: 70px !important;
+}
+
+/* =================
+CLINT COMMENT CSS
+==================== */
+.clint-comment {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.clintcomments {
+    margin-top: 100px !important;
+    padding: 15px 80px;
+    color: #fff;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    border-radius: 20px;
+    bottom: -130px;
+}
+
+.clintcomments i {
+    padding: 10px 0px;
+    font-size: 75px;
+    color: #fff;
+}
+
+.clintcomments p {
+    font-size: 20px;
+    color: darkgray;
+}
+
+.clint-name h3 {
+    font-size: 15px;
+}
+
+.clint-name h6 {
+    font-size: 10px;
+    color: #9b9b9b;
+}
+
+/* =================
+Join our commounity CSS
+==================== */
+.join-commounity {
+    background: url("img/background4.jpg") no-repeat center center;
+    background-size: contain;
+    padding: 100px 0px;
+}
+
+.join-section {
+    box-sizing: content-box;
+    padding: 20px 50px;
+    border-radius: 10px;
+}
+
+.join-title h1 {
+    font-size: 23px;
+    color: #fff;
+}
+
+.join-title p {
+    color: darkgrey;
+    font-size: 12px;
+    margin-top: 15px;
+}
+
+.join-btn {
+    line-height: 95px;
+}
+
+.costom-btn2 {
+    position: relative;
+}
+
+.costom-btn2::after {
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 6px;
+    left: 34px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+@keyframes plybtn {
+    0% {
+        transform: scale(0);
+        opacity: .5;
+    }
+
+    50% {
+        transform: scale(1.5);
+        opacity: .7;
+    }
+
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+.costom-btn2:hover.costom-btn2::after {
+    visibility: visible;
+    opacity: 0;
+    animation: plybtn 1s ease-in-out;
+}
+
+/* =================
+contact section CSS
+==================== */
+.contact-left h3 {
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.contact-right {}
+
+.contact-right form {
+    margin-top: 50px;
+}
+
+.contact-right form input {
+    border: transparent;
+    box-shadow: 1px 1px 4px 0px rgba(12, 12, 12, .2);
+    border-radius: 5px;
+    padding: 0px 10px;
+}
+
+.contact-right form a {
+    text-decoration: none;
+    position: relative;
+}
+
+@keyframes plybtn {
+    0% {
+        transform: scale(0);
+        opacity: .5;
+    }
+
+    50% {
+        transform: scale(1.5);
+        opacity: .7;
+    }
+
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+.costom-btn::after {
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 11px;
+    left: 54px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.costom-btn:hover.costom-btn::after {
+    visibility: visible;
+    opacity: 0;
+    animation: plybtn 1s ease-in-out;
+}
+
+/* =================
+contact section CSS
+==================== */
